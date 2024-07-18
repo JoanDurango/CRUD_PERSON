@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const Person = ({id, name, role, img}) => {
+export const Person = ({name, role, img}) => {
 
   return (
     <div className='col'>
@@ -20,7 +20,6 @@ export const Person = ({id, name, role, img}) => {
 }
 
 Person.propTypes = {
-  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired
